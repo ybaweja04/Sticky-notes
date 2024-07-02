@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-image: url('./components/assets/Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 3em;
+  color: #0a0a0a;
+}
+h2{
+  margin: 0px 100px 20px 100px;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.note-container {
+  position: relative;
+  width: 80%;
+  min-height: 75vh;
+  border: 2px dashed #ccc;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 10px;
+}
+
+.sticky-note {
+  width: 200px;
+  min-height: 150px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  cursor: grab;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  resize: vertical;
+  overflow: hidden;
+}
+
+.sticky-note textarea {
+  flex: 1;
+  resize: vertical;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+.sticky-note button {
+  background: #ff5c5c;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 2.5px 5px;
+  border-radius: 4px;
+  transition: background 0.3s;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.sticky-note button:hover {
+  background: #e14b4b;
+}
+
+.color-palette {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.color-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
+
+.color-palette-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.color-palette-container .color-swatch {
+  margin: 0 5px;
+}
+
+.add-note-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.add-note-container button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.add-note-container button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width:400px) {
+  h2{
+    margin: 0px 50px 20px 50px;
+    color: #333;
+    font-size: 1em;
+  }
+}
